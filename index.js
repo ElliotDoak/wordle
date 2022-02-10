@@ -21,7 +21,6 @@ app.get("/word", (req, res) => {
   axios
     .request(options)
     .then((response) => {
-      //console.log(response.data.word);
       res.json(response.data[0]);
     })
     .catch((error) => {
@@ -30,7 +29,6 @@ app.get("/word", (req, res) => {
 });
 
 app.get("/check", (req, res) => {
-  //   console.log(req.query.word);
   const word = req.query.word;
 
   const options = {

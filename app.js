@@ -79,8 +79,6 @@ guessRows.forEach((guessRow, guessRowIndex) => {
 
 const handleClick = (letter) => {
   if (!isGameOver) {
-    console.log("clicked", letter);
-    console.log(guessRows);
     if (letter === "<<") {
       deleteLetter();
       return;
@@ -124,8 +122,6 @@ const checkRow = () => {
     fetch(`http://localhost:8000/check/?word=${guess}`)
       .then((response) => response.json())
       .then((json) => {
-        console.log("word response");
-        console.log(json);
         if (json == "Entry word not found") {
           showMessage(NOT_A_WORD_MSG);
           return;
