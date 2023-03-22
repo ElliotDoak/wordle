@@ -1,3 +1,5 @@
+A recreation of the game that took the world by storm for some fun.
+
 # Running the app
 
 ## Run server
