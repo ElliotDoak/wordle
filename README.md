@@ -1,6 +1,6 @@
-A recreation of the game that took the world by storm for some fun.
+# WORDLE
 
-# Running the app
+A recreation of the game that took the world by storm for some fun.
 
 ## Run server
 
